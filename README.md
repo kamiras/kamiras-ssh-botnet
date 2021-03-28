@@ -10,6 +10,7 @@ This project was made by kamiras. Feel free to use, change and ask everything th
 
 **Four Attack Methods**
 
+- [x] Command Execution
 - [x] HTTP/HTTPS Attack
 - [x] PING Attack
 - [x] SYN Attack
