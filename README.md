@@ -8,7 +8,7 @@ This project was made by kamiras. Feel free to use, change and ask everything th
 
 - [x] SSH Brute Force Attack
 
-**Four Attack Methods**
+**Five Attack Methods**
 
 - [x] Command Execution
 - [x] HTTP/HTTPS Attack
