@@ -39,13 +39,6 @@ def conexion(ip):
 
             message=ssh.connect(ip, username=USER[i], password=PASS[i])
 
-            '''
-            if message == 0:
-                if PASS[i] == 'abcdefghijklmnopqrstuvpksisjdiad9238ue398j9jlsuihaiaushfl9w8yh948tujsh':
-                    print(f'[*] False Authentication')
-                    continue
-            '''
-
             print(f'[*] Authentication Worked IP:{ip} USER:{USER[i]} PASS={PASS[i]}')
 
             equipos.write(f'{ip}:{USER[i]}:{PASS[i]}:NS\n')
@@ -85,7 +78,7 @@ def IP():
 def alive(ip):
     a_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     location=(ip,22)
-    a_socket.settimeout(0.1)
+    a_socket.settimeout(0.05)
 
     result_of_check = a_socket.connect_ex(location)
 
