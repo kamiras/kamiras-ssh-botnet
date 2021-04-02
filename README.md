@@ -43,7 +43,7 @@ pip install paramiko
 
 ## Usage
 
-Execute the **ssh.py** with **Python 3.9**:
+Execute the **ssh.py** with **Python 3.9**: ( Don't use **sudo python ssh.py**, it won't work )
 ```
 python ssh.py
 ```    
