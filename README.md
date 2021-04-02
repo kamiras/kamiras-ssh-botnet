@@ -30,12 +30,24 @@ This project was made by kamiras. Feel free to use, change and ask everything th
 
 At least 1 **bot** to start the **Attack**
 
+## Installation
+
+```
+git clone https://github.com/kamiras/kamiras-ssh-botnet.git
+```
+
+
+```
+pip install paramiko
+```
+
 ## Usage
 
 Execute the **ssh.py** with **Python 3.9**:
+```
+python ssh.py
+```    
 
-    ssh.py
-   
 Then select the **option** that you want ( **Remember**, you need to have **some bots** before starting the attacks ):
 
 ```
