@@ -264,7 +264,7 @@ REMEMBER! Press exit to leave the device | To concatenate commands just add ; ex
         if option==8:
 
             option=int(input('''
-1) passwords.txt ( 135 combinations, this file goes slower but it has more combos )
+1) passwords.txt ( 136 combinations, this file goes slower but it has more combos )
 2) passwords_small.txt ( 4 combinations, this file goes faster but it has less combos )
 
 Select the option: '''))
