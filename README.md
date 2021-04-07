@@ -47,6 +47,10 @@ Execute the **ssh.py** with **Python 3.9**: ( Don't use **sudo python ssh.py**, 
 ```
 python ssh.py
 ```    
+or
+```
+python3 ssh.py
+```   
 
 Then select the **option** that you want ( **Remember**, you need to have **some bots** before starting the attacks ):
 
