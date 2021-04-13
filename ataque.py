@@ -229,6 +229,7 @@ def attack(ip, command, puerto, tipo):
                         print("[*] Hping3 Installing Completed\n")
                     else:
                         print("[*] Hping3 Installing Failed, Error: ",exit_status+"\n")
+                        continue
 
                     textToSearch = ip_equipos_alive[i]+":"+user_equipos_alive[i]+":"+password_equipos_alive[i]+":"+"NS"
                     textToReplace = ip_equipos_alive[i]+":"+user_equipos_alive[i]+":"+password_equipos_alive[i]+":"+"SI"
